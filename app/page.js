@@ -4,7 +4,7 @@ import ProductComponent from '@/components/Product'
 // import { findAllProducts } from '@/pages/api/products'
 
 const findAllProducts = async () => {
-  const { data } = await axios.get('http://localhost:3000/api/products')
+  const { data } = await axios.get('/api/products')
   return data
 }
 
