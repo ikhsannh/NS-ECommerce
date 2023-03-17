@@ -7,7 +7,7 @@ import mongoose from "mongoose";
 //     }
 
 //     mongoose.set("strictQuery", true);
-//     mongoose.connect(process.env.MONGODB_URI);
+//     mongoose.connect(process.env.MONGODB_URI_1);
 // }
 
 // export default dbConnect;
@@ -18,7 +18,7 @@ export default async function dbConnect() {
     //     // Use current db connection
     //     return;
     // }
-    await mongoose.connect(process.env.MONGODB_URI, {
+    await mongoose.connect(process.env.MONGODB_URI_1, {
         useNewUrlParser: true,
         useUnifiedTopology: true,
     });

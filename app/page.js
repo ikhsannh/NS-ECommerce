@@ -13,7 +13,7 @@ const Home = async () => {
   // console.log(products)
 
   const categories = [...new Set(products.map(p => p.category))];
-  // console.log({categories})
+  //  console.log({categories})
 
   return (
 
